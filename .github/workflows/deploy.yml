@@ -25,18 +25,17 @@ jobs:
         with:
           node-version: "18"
           cache: "npm"
-          cache-dependency-path: "quan-portal-scene-demo/package-lock.json"
 
       - name: Install dependencies
-        run: cd quan-portal-scene-demo && npm install
+        run: npm install
 
       - name: Build project
-        run: cd quan-portal-scene-demo && npm run build
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./quan-portal-scene-demo/dist"
+          path: "./dist"
 
   deploy:
     environment:
