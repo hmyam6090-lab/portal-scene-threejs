@@ -1,2 +1,16 @@
-# portal-scene-threejs
-Created a beautiful 3D portal scene using Blender and rendered using baking technique to get the best looking lights and shadows. A demo built as part of course to learn how to develop beautiful 3D web experiences using Three.js
+# Three.js Journey
+
+## Setup
+Download [Node.js](https://nodejs.org/en/download/).
+Run this followed commands:
+
+``` bash
+# Install dependencies (only the first time)
+npm install
+
+# Run the local server at localhost:8080
+npm run dev
+
+# Build for production in the dist/ directory
+npm run build
+```
